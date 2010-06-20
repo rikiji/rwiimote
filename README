@@ -1,0 +1,64 @@
+RWiimote
+* Enjoy your wiimote within ruby.
+
+Author
+* Riccardo Cecolin
+* rikiji at playkanji dot com
+* http://www.rikiji.it
+
+Documentation
+* You need libcwiimote-dev to compile this extension.
+* For usage examples check examples/first.rb and examples/second.rb
+	
+* new instance
+  w= Wiimote.new
+
+* connect to wiimote by mac address	
+  w.connect "00:11:22:33:44:55"
+* disconnect
+  w.disconnect
+* check if wiimote link is active
+  w.open?
+* update (send/receive data from/to wiimote)
+  w.update
+* flush all buffered data
+  w.flush
+
+* array of leds (4)
+  w.led
+* turn on led
+  w.led[0].on
+* turn off led
+  w.led[0].off
+* check if accelerometer is on
+  w.acc?
+* set accelerometer status
+  w.acc= true
+  w.acc= false
+
+* check if a a button has been clicked
+  w.a?
+  w.b?
+  w.one?
+  w.two?
+  w.plus?
+  w.minus?
+  w.up?
+  w.down?
+  w.left?
+  w.right?
+  w.home?
+
+* retrieve force data (absolute value)
+  w.force
+* retieve force by axis
+  w.force_x
+  w.force_y
+  w.force_z
+* retrieve tilt by axis
+  w.tilt_x
+  w.tilt_y
+  w.tilt_z
+
+
+
