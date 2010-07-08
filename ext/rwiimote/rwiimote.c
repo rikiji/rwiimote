@@ -1,4 +1,8 @@
-/* Riccardo Cecolin 11 april 2010 */
+/*  
+ * Copyright (C) 2010 Riccardo Cecolin 
+ * rkj@playkanji.com - 11 april 2010
+ */
+
 #include <ruby.h>
 #include <libcwiimote/wiimote.h>
 #include <libcwiimote/wiimote_api.h>
